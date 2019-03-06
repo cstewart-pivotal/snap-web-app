@@ -1,0 +1,9 @@
+applications:
+- name: snap-analysis
+  memory: 1G
+  instances: 1
+  services:
+    - snap-mysql-db
+  buildpack: java_buildpack
+  path: application.jar
+  random-route: true
